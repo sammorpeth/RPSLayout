@@ -1,0 +1,188 @@
+/* ==========================================
+   ============ ELEMENT STYLINGS ============
+   ========================================== */
+body {
+  font-family: 'Rubik' , sans-serif;
+  background: #eee;
+}
+
+li {
+  list-style: none;
+  font-size: 1.1em;
+}
+
+img {
+  width: 70%;
+}
+
+button {
+  border: none;
+}
+
+/* ==========================================
+   ============ CLASS STYLING ===============
+   ========================================== */
+
+
+/* Button Styles */
+
+.button-wide{
+  background: #381A72;
+  color: white;
+  width: 100%;
+  padding: .5em;
+  margin: .25em;
+}
+
+.button-tight {
+  display: inline;
+  background: #00866B;
+  color: white;
+  /* width: 50%; */
+  padding: .5em;
+  margin: .25em;
+}
+
+.cover-img {
+  width: 100%;
+}
+
+/* ==========================================
+   ============ NAV STYLING =================
+   ========================================== */
+
+ .wrapper {
+  width: 65%; 
+  margin: 0 auto;
+} 
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.75fr 0.75fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+
+}
+
+.nav-lists {
+  display: grid;
+  grid-template-columns: .25fr 1fr;
+
+}
+
+.social {
+}
+
+
+.features,
+.topics {
+}
+
+.main-logo {
+  /* grid-column: 1; */
+  justify-self: end;
+}
+
+.topics {
+  justify-self: end;
+}
+
+.features {
+  justify-self: start;
+}
+
+.search {
+  align-self: start;
+  justify-self: start;
+  /* grid-column: 3/3; */
+}
+
+/* ==========================================
+   ========== COVER CARD STYLING ============
+   ========================================== */
+
+
+
+.cover-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 2em;
+  grid-gap: 1em;
+}
+
+.card h2 {
+  font-size: 1.2em;
+}
+
+.card {
+  background: #00866B;
+  /* padding: 1em; */
+}
+
+/* ==========================================
+   ========== MAIN POST STYLING =============
+   ========================================== */
+
+   .container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1em;
+  }
+
+   .main-posts {
+     padding: 2em;
+     display: grid;
+     /* width: 60%; */
+     background: white;
+   }
+
+   /* Could probably tidy this up. No idea how though. 
+   Would like to be able to do like "div a, div button" for example. */
+
+   .main-posts :nth-child(odd) > div a {
+    color: #E7387D;
+   }
+
+   .main-posts :nth-child(odd) > div button {
+    background: #E7387D;
+   }
+
+   .main-posts :nth-child(even) > div a {
+    color: #00866B;
+   }
+
+   .main-posts :nth-child(even) > div button {
+    background: #00866B;
+   }
+
+   .post-img {
+     width: 100%;
+   }
+
+   .post-text {
+     margin-right: 1em;
+     margin-left: 1em;
+   }
+
+   .post {
+     margin-top: 1em;
+   }
+
+   /* ==========================================
+   ========== AD COLUMN STYLING ================
+   ========================================== */
+   .side-post h4 {
+     font-size: .8em;
+   }
+
+   .side-post p{
+     font-size: .75em;
+   }
+
+
+   .ad-column > div img {
+     width: 100%;
+   }
